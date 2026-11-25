@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Balance — Use Technology, Don't Let It Use You</title>
+<meta name="description" content="Digital Balance is a student-led campaign helping teenagers build a healthier relationship with technology. Check. Understand. Plan. Act. Improve.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="top">
+  <div class="nav__inner container">
+    <a href="#top" class="nav__brand">
+      <img src="team-logo.png" alt="Digital Balance logo" class="nav__logo">
+      <span class="nav__brand-text">DIGITAL<em>BALANCE</em></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#top" data-nav>Home</a>
+      <a href="#problem" data-nav>The Problem</a>
+      <a href="#test" data-nav>Digital Balance Test</a>
+      <a href="#challenge" data-nav>7-Day Challenge</a>
+      <a href="#progress" data-nav>Progress</a>
+      <a href="#tips" data-nav>Tips</a>
+      <a href="#about" data-nav>About</a>
+    </nav>
+
+    <a href="#test" class="btn btn--small btn--primary nav__cta">Take the Test</a>
+
+    <button class="nav__burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__beam" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <span class="badge badge--campaign">DIGITAL BALANCE</span>
+      <h1 class="hero__title">Are You in Control of Your Screen Time?</h1>
+      <p class="hero__sub">Technology is part of our lives. The goal isn't to stop using it — it's to use it with balance.</p>
+      <div class="hero__ctas">
+        <a href="#test" class="btn btn--primary">Check My Digital Balance</a>
+        <a href="#challenge" class="btn btn--ghost">Explore the 7-Day Challenge</a>
+      </div>
+      <p class="hero__tagline">"Use Technology, Don't Let It Use You."</p>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="worlds">
+        <div class="worlds__col worlds__col--digital">
+          <span class="worlds__label">Digital World</span>
+          <div class="worlds__chip">📱 <span>Social Media</span></div>
+          <div class="worlds__chip">🎮 <span>Gaming</span></div>
+          <div class="worlds__chip">▶️ <span>Videos</span></div>
+          <div class="worlds__chip">🔔 <span>Notifications</span></div>
+          <div class="worlds__chip">💬 <span>Messaging</span></div>
+        </div>
+
+        <div class="worlds__balance">
+          <div class="worlds__balance-orb">⚖️</div>
+          <span class="worlds__balance-label">Balance</span>
+          <div class="worlds__balance-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="worlds__col worlds__col--real">
+          <span class="worlds__label">Real World</span>
+          <div class="worlds__chip">⚽ <span>Sports</span></div>
+          <div class="worlds__chip">📚 <span>Learning</span></div>
+          <div class="worlds__chip">👥 <span>Friends</span></div>
+          <div class="worlds__chip">🌳 <span>Outdoors</span></div>
+          <div class="worlds__chip">🎯 <span>Personal Goals</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ============ THE PROBLEM ============ -->
+<section class="section section--dark" id="problem">
+  <div class="container">
+    <p class="eyebrow">Understand</p>
+    <h2 class="section__title">The Problem Isn't Technology.</h2>
+    <p class="section__lead">The problem begins when technology starts controlling our time, attention, and daily habits.</p>
+    <p class="section__body">Excessive and uncontrolled screen use can interfere with concentration, sleep, physical activity, and time spent on other important activities — studying, family, friendships, hobbies, and personal goals. Digital Balance isn't about guilt. It's about noticing the pattern and choosing something different, on purpose.</p>
+
+    <div class="grid grid--4 problem-cards">
+      <div class="card problem-card">
+        <span class="problem-card__icon">🎯</span>
+        <h3>Focus</h3>
+        <p>Constant notifications and scrolling can make it harder to stay focused.</p>
+      </div>
+      <div class="card problem-card">
+        <span class="problem-card__icon">🌙</span>
+        <h3>Sleep</h3>
+        <p>Using screens late at night can push bedtime later and interfere with healthy sleep routines.</p>
+      </div>
+      <div class="card problem-card">
+        <span class="problem-card__icon">⏳</span>
+        <h3>Time</h3>
+        <p>Small periods of scrolling can add up to many hours over time.</p>
+      </div>
+      <div class="card problem-card">
+        <span class="problem-card__icon">🤝</span>
+        <h3>Real Life</h3>
+        <p>Too much screen time can take time away from activities, people, and goals that matter.</p>
+      </div>
+    </div>
+
+    <div class="section__cta">
+      <a href="#calculator" class="btn btn--primary">Find Your Digital Balance</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCREEN TIME CALCULATOR ============ -->
+<section class="section" id="calculator">
+  <div class="container container--narrow">
+    <p class="eyebrow">Check</p>
+    <h2 class="section__title">Where Does Your Time Go?</h2>
+    <p class="section__lead">How many hours do you spend on your phone each day?</p>
+
+    <div class="calc card">
+      <div class="calc__input-row">
+        <input type="range" id="calcRange" min="0" max="24" step="0.5" value="5">
+        <div class="calc__value"><span id="calcHours">5</span> <span>hrs / day</span></div>
+      </div>
+
+      <div class="calc__results">
+        <div class="calc__stat">
+          <span class="calc__num" id="calcDay">5</span>
+          <span class="calc__label">Hours / Day</span>
+        </div>
+        <div class="calc__stat">
+          <span class="calc__num" id="calcWeek">35</span>
+          <span class="calc__label">Hours / Week</span>
+        </div>
+        <div class="calc__stat">
+          <span class="calc__num" id="calcMonth">152</span>
+          <span class="calc__label">Hours / Month</span>
+        </div>
+        <div class="calc__stat">
+          <span class="calc__num" id="calcYear">1,825</span>
+          <span class="calc__label">Hours / Year</span>
+        </div>
+      </div>
+
+      <p class="calc__note">This is an estimate based on the daily average you entered.</p>
+      <p class="calc__message">Imagine what you could do with some of that time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIGITAL BALANCE TEST ============ -->
+<section class="section section--dark" id="test">
+  <div class="container container--narrow">
+    <p class="eyebrow">Check</p>
+    <h2 class="section__title">Check Your Digital Balance</h2>
+    <p class="section__lead">Answer honestly. There are no right or wrong answers.</p>
+
+    <div class="test card" id="testCard">
+      <div class="test__progress">
+        <div class="test__progress-bar"><div class="test__progress-fill" id="testProgressFill"></div></div>
+        <span id="testProgressLabel">Question 1 of 10</span>
+      </div>
+
+      <div id="testQuestionWrap"></div>
+
+      <div class="test__nav">
+        <button class="btn btn--ghost" id="testPrev" disabled>Back</button>
+        <button class="btn btn--primary" id="testNext" disabled>Next</button>
+      </div>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="test-results card" id="testResults" hidden>
+      <div class="results__score">
+        <svg class="score-ring" width="180" height="180" viewBox="0 0 180 180">
+          <circle class="score-ring__bg" cx="90" cy="90" r="78"></circle>
+          <circle class="score-ring__fill" id="scoreRingFill" cx="90" cy="90" r="78"></circle>
+        </svg>
+        <div class="results__score-number">
+          <span id="scoreNumber">0</span><span class="results__score-max">/100</span>
+        </div>
+      </div>
+      <h3 class="results__label" id="scoreLevelLabel">Room to Improve</h3>
+
+      <div class="results__meta">
+        <div class="results__meta-item">
+          <span class="results__meta-tag results__meta-tag--good">Strongest area</span>
+          <span id="strongestArea">—</span>
+        </div>
+        <div class="results__meta-item">
+          <span class="results__meta-tag results__meta-tag--opp">Biggest opportunity</span>
+          <span id="opportunityArea">—</span>
+        </div>
+      </div>
+
+      <h4 class="results__rec-title">Your Personal Plan</h4>
+      <ul class="results__recs" id="resultsRecs"></ul>
+
+      <div class="results__goal" id="resultsGoal">
+        <h4 class="results__rec-title">Choose Your Main Goal</h4>
+        <div class="goal-options" id="goalOptions" role="radiogroup" aria-label="Choose your main goal"></div>
+        <p class="results__goal-current" id="goalCurrent" hidden>Your current goal: <strong id="goalCurrentText"></strong></p>
+      </div>
+
+      <p class="results__transition" id="resultsTransition" hidden>Your personal plan is ready. Let's turn your goal into action.</p>
+
+      <div class="results__actions">
+        <button class="btn btn--primary" id="startPlanBtn">Start My Personal Plan</button>
+        <button class="btn btn--ghost" id="retakeTest">Retake the Test</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7-DAY CHALLENGE ============ -->
+<section class="section" id="challenge">
+  <div class="container">
+    <p class="eyebrow">Act</p>
+    <h2 class="section__title">7 Days to Better Digital Balance</h2>
+    <p class="section__lead">Small changes can create better habits.</p>
+
+    <div class="goal-banner" id="challengeGoalBanner" hidden>
+      <span class="goal-banner__eyebrow">Your Goal</span>
+      <p class="goal-banner__text" id="challengeGoalText"></p>
+      <p class="goal-banner__note">Your 7-day challenge is designed to help you work toward this goal.</p>
+    </div>
+
+    <div class="challenge-grid" id="challengeGrid"></div>
+  </div>
+</section>
+
+<!-- ============ PROGRESS TRACKER ============ -->
+<section class="section section--dark" id="progress">
+  <div class="container container--narrow">
+    <p class="eyebrow">Improve</p>
+    <h2 class="section__title">Your Progress</h2>
+    <p class="section__lead">Track how your habits are changing, day by day.</p>
+
+    <div class="journey-header">
+      <span class="eyebrow" style="margin-bottom:4px">Your Digital Balance Journey</span>
+      <p class="journey-header__goal" id="journeyGoalText">Take the test to set your goal.</p>
+    </div>
+
+    <div class="journey-strip" id="journeyStrip" aria-hidden="true"></div>
+
+    <div class="before-after card" id="beforeAfterCard"></div>
+
+    <div class="dashboard card">
+      <div class="dashboard__top">
+        <div class="dashboard__ring-wrap">
+          <svg class="score-ring score-ring--sm" width="120" height="120" viewBox="0 0 120 120">
+            <circle class="score-ring__bg" cx="60" cy="60" r="50"></circle>
+            <circle class="score-ring__fill" id="progressRingFill" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <div class="dashboard__ring-label"><span id="progressDaysLabel">0/7</span><small>days</small></div>
+        </div>
+        <div class="dashboard__stats">
+          <div class="dashboard__stat">
+            <span class="dashboard__stat-label">Challenge Progress</span>
+            <span class="dashboard__stat-value" id="progressPercentLabel">0%</span>
+          </div>
+          <div class="dashboard__stat">
+            <span class="dashboard__stat-label">Starting Screen Time</span>
+            <span class="dashboard__stat-value" id="startScreenTime">—</span>
+          </div>
+          <div class="dashboard__stat">
+            <span class="dashboard__stat-label">Current Screen Time</span>
+            <span class="dashboard__stat-value" id="currentScreenTime">—</span>
+          </div>
+          <div class="dashboard__stat">
+            <span class="dashboard__stat-label">Change</span>
+            <span class="dashboard__stat-value" id="screenTimeChange">—</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="dashboard__update" id="updateScreenTimeForm">
+        <label for="currentScreenTimeInput">Update today's screen time (hours)</label>
+        <div class="dashboard__update-row">
+          <input type="number" id="currentScreenTimeInput" min="0" max="24" step="0.1" placeholder="e.g. 4.5">
+          <button type="submit" class="btn btn--primary btn--small">Update</button>
+        </div>
+      </form>
+
+      <p class="dashboard__motivation" id="dashboardMotivation">Complete Day 1 of the challenge to set your starting point.</p>
+
+      <button class="btn btn--ghost btn--small" id="resetProgressBtn">Reset All Progress</button>
+    </div>
+
+    <h3 class="badges__title">Achievements</h3>
+    <div class="badges" id="badgesGrid"></div>
+  </div>
+</section>
+
+<!-- ============ REPLACEMENT ACTIVITIES ============ -->
+<section class="section" id="activities">
+  <div class="container">
+    <p class="eyebrow">Plan</p>
+    <h2 class="section__title">What Will You Do With Your Extra Time?</h2>
+    <p class="section__lead">Pick a few things worth logging off for.</p>
+
+    <div class="activities" id="activitiesGrid"></div>
+    <p class="activities__toast" id="activitiesToast" aria-live="polite"></p>
+  </div>
+</section>
+
+<!-- ============ TIPS ============ -->
+<section class="section section--dark" id="tips">
+  <div class="container">
+    <p class="eyebrow">Improve</p>
+    <h2 class="section__title">Digital Balance Tips</h2>
+    <p class="section__lead">Practical, realistic actions — not rules.</p>
+
+    <div class="grid grid--3 tips-grid" id="tipsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ CAMPAIGN / JOIN THE MOVEMENT ============ -->
+<section class="section section--campaign" id="movement">
+  <div class="container container--narrow">
+    <span class="badge badge--campaign">DIGITAL BALANCE</span>
+    <h2 class="section__title">Join the Movement</h2>
+    <p class="section__lead">Technology is a tool. You decide how it fits into your life.</p>
+
+    <div class="movement__ctas">
+      <a href="#test" class="btn btn--primary">Take the Test</a>
+      <a href="#challenge" class="btn btn--primary-outline">Start the Challenge</a>
+      <button class="btn btn--ghost" id="shareCampaignBtn">Share the Campaign</button>
+    </div>
+
+    <div class="movement__share" id="shareRow">
+      <a class="share-btn share-btn--x" target="_blank" rel="noopener" id="shareX" href="#">Share on X</a>
+      <a class="share-btn share-btn--fb" target="_blank" rel="noopener" id="shareFb" href="#">Share on Facebook</a>
+      <a class="share-btn share-btn--wa" target="_blank" rel="noopener" id="shareWa" href="#">Share on WhatsApp</a>
+      <button class="share-btn share-btn--copy" id="shareCopy">Copy Link</button>
+    </div>
+    <p class="movement__hashtag">#DigitalBalance</p>
+  </div>
+</section>
+
+<!-- ============ SOCIAL MEDIA POST PREVIEW ============ -->
+<section class="section" id="posts">
+  <div class="container">
+    <p class="eyebrow">Campaign</p>
+    <h2 class="section__title">From the Campaign Feed</h2>
+
+    <div class="grid grid--4 posts-grid">
+      <article class="post-card">
+        <div class="post-card__head">
+          <img src="team-logo.png" alt="" class="post-card__avatar">
+          <div><strong>digital.balance</strong><span>Sponsored · Campaign</span></div>
+        </div>
+        <p>How much of your life is on your screen?</p>
+        <div class="post-card__foot"><span>♥ 2.4k</span><span>#DigitalBalance</span></div>
+      </article>
+      <article class="post-card">
+        <div class="post-card__head">
+          <img src="team-logo.png" alt="" class="post-card__avatar">
+          <div><strong>digital.balance</strong><span>Sponsored · Campaign</span></div>
+        </div>
+        <p>Technology isn't the enemy. Losing control is.</p>
+        <div class="post-card__foot"><span>♥ 3.1k</span><span>#DigitalBalance</span></div>
+      </article>
+      <article class="post-card">
+        <div class="post-card__head">
+          <img src="team-logo.png" alt="" class="post-card__avatar">
+          <div><strong>digital.balance</strong><span>Sponsored · Campaign</span></div>
+        </div>
+        <p>Less unnecessary scrolling. More time for what matters.</p>
+        <div class="post-card__foot"><span>♥ 1.8k</span><span>#DigitalBalance</span></div>
+      </article>
+      <article class="post-card">
+        <div class="post-card__head">
+          <img src="team-logo.png" alt="" class="post-card__avatar">
+          <div><strong>digital.balance</strong><span>Sponsored · Campaign</span></div>
+        </div>
+        <p>Take the Digital Balance Challenge.</p>
+        <div class="post-card__foot"><span>♥ 2.9k</span><span>#DigitalBalance</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section section--dark" id="about">
+  <div class="container container--narrow about">
+    <p class="eyebrow">About</p>
+    <h2 class="section__title">Why Digital Balance?</h2>
+    <p class="section__body section__body--lg">We created Digital Balance to help teenagers build a healthier relationship with technology. We believe technology should help us learn, communicate, and create — not take control of our time.</p>
+
+    <div class="about__team">
+      <img src="logo.png" alt="Team Summer Camp logo" class="about__team-logo">
+      <div>
+        <strong>Created by Team Summer Camp</strong>
+        <span>Creating Ideas. Making an Impact.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section final-cta">
+  <div class="container container--narrow">
+    <img src="team-logo.png" alt="Digital Balance logo" class="final-cta__logo">
+    <h2 class="final-cta__title">DIGITAL BALANCE</h2>
+    <p class="final-cta__tagline">"Use Technology, Don't Let It Use You."</p>
+    <a href="#test" class="btn btn--primary btn--lg">Start Your Digital Balance</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="siteFooter">
+  <div class="footer__glow" aria-hidden="true"></div>
+  <div class="container">
+
+    <div class="footer__brand-row">
+      <div class="footer__brand">
+        <img src="team-logo.png" alt="Digital Balance logo" class="footer__logo">
+        <div>
+          <span class="footer__brand-name">DIGITAL BALANCE</span>
+          <span class="footer__brand-tag">"Use Technology, Don't Let It Use You."</span>
+          <p class="footer__brand-desc">A student-led campaign promoting healthier and more balanced digital habits for teenagers.</p>
+        </div>
+      </div>
+
+      <div class="footer__team">
+        <img src="logo.png" alt="Team Summer Camp logo" class="footer__team-logo">
+        <div>
+          <span class="footer__team-name">TEAM SUMMER CAMP</span>
+          <span class="footer__team-tag">Creating Ideas. Making an Impact.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__cols">
+      <nav class="footer__col" aria-label="Campaign links">
+        <h3>Campaign</h3>
+        <a href="#about" data-nav>About the Campaign</a>
+        <a href="#problem" data-nav>The Problem</a>
+        <a href="#activities" data-nav>Our Solution</a>
+        <a href="#test" data-nav>Digital Balance Test</a>
+        <a href="#challenge" data-nav>7-Day Challenge</a>
+        <a href="#progress" data-nav>Progress Tracker</a>
+        <a href="#tips" data-nav>Digital Balance Tips</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Explore links">
+        <h3>Explore</h3>
+        <a href="#top" data-nav>Home</a>
+        <a href="#problem" data-nav>The Problem</a>
+        <a href="#test" data-nav>Take the Test</a>
+        <a href="#challenge" data-nav>Challenge</a>
+        <a href="#progress" data-nav>Progress</a>
+        <a href="#tips" data-nav>Tips</a>
+        <a href="#about" data-nav>About Us</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Team Summer Camp">
+        <h3>Team Summer Camp</h3>
+        <a href="#about" data-nav>Meet Our Team</a>
+        <a href="#about" data-nav>Our Mission</a>
+        <a href="#movement" data-nav>Our Work</a>
+        <p class="footer__col-note">Young creators working together to solve real problems through creativity and technology.</p>
+      </nav>
+
+      <div class="footer__col footer__col--movement">
+        <h3>Join the Movement</h3>
+        <p>Help us spread the message of digital balance.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Digital Balance on Instagram" class="footer__social-icon" data-social="instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Digital Balance on Facebook" class="footer__social-icon" data-social="facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M13.5 21v-7.6h2.6l.4-3H13.5V8.4c0-.87.24-1.46 1.5-1.46h1.6V4.28C16.3 4.2 15.34 4.1 14.2 4.1c-2.4 0-4 1.46-4 4.15v2.25H7.6v3h2.6V21h3.3z"/></svg>
+          </a>
+          <a href="#" aria-label="Digital Balance on TikTok" class="footer__social-icon" data-social="tiktok">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M16.6 3c.4 2.1 1.8 3.6 4 3.8v2.7c-1.4 0-2.8-.4-4-1.2v6.4c0 3-2.4 5.4-5.5 5.4S5.6 17.7 5.6 14.7c0-2.9 2.2-5.2 5-5.4v2.8c-1.3.2-2.3 1.3-2.3 2.6 0 1.5 1.2 2.7 2.8 2.7s2.8-1.2 2.8-2.7V3h2.7z"/></svg>
+          </a>
+          <a href="#" aria-label="Digital Balance on YouTube" class="footer__social-icon" data-social="youtube">
+            <svg viewBox="0 0 24 24" width="20" height="20"><rect x="2" y="6" width="20" height="12" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="currentColor" d="M10.5 9.5l5 2.5-5 2.5v-5z"/></svg>
+          </a>
+        </div>
+        <button class="footer__hashtag" id="footerHashtagBtn" type="button">#DigitalBalance</button>
+      </div>
+    </div>
+
+    <div class="footer__contact">
+      <h3>Get in Touch</h3>
+      <p>Have an idea, question, or feedback?</p>
+      <div class="footer__contact-items">
+        <span class="footer__contact-item">Email: <a href="mailto:elsayedadel.62010@gmail.com">elsayedadel.62010@gmail.com</a></span>
+        <span class="footer__contact-item">Social: see icons above</span>
+      </div>
+    </div>
+
+    <div class="footer__statement">
+      <p>"A healthier digital future starts with better choices today."</p>
+      <strong>DIGITAL BALANCE</strong>
+      <span>"Use Technology, Don't Let It Use You."</span>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 Team Summer Camp</span>
+      <span>Digital Balance Campaign</span>
+      <div class="footer__bottom-links">
+        <a href="#" data-nav>Privacy</a>
+        <a href="#" data-nav>Terms</a>
+        <button id="backToTopBtn" type="button">Back to Top ↑</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="fab-top" id="fabTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
